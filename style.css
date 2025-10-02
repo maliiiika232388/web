@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+
+body{
+  margin:0;
+  padding:0;
+  background-color:lightyellow;
+  
+
+}
+.container{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.logo{
+  
+  
+  font-size:15px;
+  font-family:"Poppins";
+  font-weight: bold;
+  color:darkblue;
+}
+.header_nav ul{
+  display:flex;
+  align-items:center;
+  margin:0;
+  padding:0;
+  gap:30px;
+  list-style: none;
+}
+.header_nav a{
+  color:darkblue;
+  font-size:10px;
+  font-family:"Poppins";
+  padding:20px;
+  margin:10px;
+}
+.hero{
+  display:flex;
+  align-items:center;
+  padding-left: 37px;
+  gap:100px;
+
+}
+
+.hero h4{
+  color:darkblue;
+  font-size:28px;
+  font-family:Poppins;
+  margin-bottom:0px;
+  margin:0;
+  padding:0;
+  
+
+}
+.hero h1{
+  font-size:128px;
+  font-family:Poppins;
+  color:darkblue;
+  margin-bottom:0px;
+  margin:0;
+  padding:0;
+ 
+  
+}
+.hero h4{
+  color:darkblue;
+  font-size:28px;
+  font-family:Poppins;
+  
+}
+header, 
+.container, 
+.logo {
+  padding-left: 0;
+  margin-left: 0;
+}
+button{
+  background-color:rgba(255, 255, 0, 0.485);
+  margin-top: 59px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  
+}
+.about h1{
+  font-size:70px;
+  font-family:"Poppins";
+  color:rgba(255,248,153,100%);
+  
+}
+
+
+.about {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+
+/* Первый абзац (не меняется) */
+.about p:first-of-type {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 50px; /* Больший отступ перед таймлайном */
+}
+
+/* Добавляем буллиты ТОЛЬКО к h4 которые идут после первого абзаца */
+.about h4 {
+  position: relative;
+  padding-left: 30px;
+  font-size: 20px;
+  color: darkblue;
+  margin-bottom: 15px;
+}
+
+.about h4::before {
+  content: "●";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: darkblue;
+  font-size: 24px;
+}
+
+/* Абзацы внутри таймлайна */
+.about h4 + p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 30px;
+  margin-left: 30px; /* Добавляем отступ для выравнивания с текстом */
+}
